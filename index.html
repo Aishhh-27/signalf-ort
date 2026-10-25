@@ -1,19 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SignalFort helps small IT teams understand their email and domain security.">
   <title>SignalFort | Email & Domain Security</title>
-  <meta name="description" content="Understand your email domain security with clear, actionable security reviews for IT teams.">
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #0b1120;
-      color: #f1f5f9;
+      color: #f8fafc;
       line-height: 1.6;
     }
+
     header {
       padding: 24px 8%;
       display: flex;
@@ -21,83 +27,147 @@
       align-items: center;
       border-bottom: 1px solid #263247;
     }
-    .logo { font-size: 25px; font-weight: bold; color: #60a5fa; }
-    header span { color: #94a3b8; font-size: 13px; }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #67e8f9;
+    }
+
+    header a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
     main {
-      max-width: 900px;
-      margin: 100px auto;
-      padding: 0 24px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 90px 24px;
       text-align: center;
     }
+
     .tag {
-      color: #93c5fd;
-      background: #172554;
-      display: inline-block;
-      padding: 7px 15px;
-      border-radius: 20px;
-      font-size: 14px;
+      color: #67e8f9;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
     }
-    h1 { font-size: clamp(38px, 6vw, 62px); line-height: 1.15; }
-    h1 span { color: #60a5fa; }
-    p { color: #aab8cc; font-size: 18px; }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 64px);
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: #67e8f9;
+    }
+
+    .intro {
+      max-width: 680px;
+      margin: 0 auto 30px;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #67e8f9;
+      color: #0b1120;
+      padding: 13px 23px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 18px;
-      margin-top: 55px;
+      margin-top: 65px;
       text-align: left;
     }
+
     .feature {
-      padding: 22px;
+      background: #111c30;
       border: 1px solid #263247;
-      border-radius: 14px;
-      background: #111b2e;
+      padding: 24px;
+      border-radius: 12px;
     }
-    .feature h3 { color: #bfdbfe; }
-    .feature p { font-size: 15px; }
+
+    .feature h2 {
+      font-size: 19px;
+    }
+
+    .feature p {
+      color: #cbd5e1;
+    }
+
     footer {
       text-align: center;
       padding: 25px;
-      border-top: 1px solid #263247;
       color: #94a3b8;
-      font-size: 13px;
+      border-top: 1px solid #263247;
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="logo">SignalFort</div>
-    <span>Email & Domain Security</span>
+    <a href="mailto:aishwaryag2712@gmail.com">Contact</a>
   </header>
 
   <main>
-    <div class="tag">Security clarity for growing IT teams</div>
-    <h1>Make your domain's security <span>easier to understand.</span></h1>
-    <p>
-      SignalFort is being built to help IT teams review email-domain
-      security settings, understand potential weaknesses, and take
-      practical next steps.
+    <p class="tag">Email & Domain Security</p>
+
+    <h1>
+      Know your domain's<br>
+      <span>security posture.</span>
+    </h1>
+
+    <p class="intro">
+      SignalFort is building a simpler way for small IT teams and
+      service providers to review email-domain security, understand
+      configuration gaps, and prepare clear reports for their clients.
     </p>
 
+    <a
+      class="button"
+      href="mailto:aishwaryag2712@gmail.com?subject=SignalFort%20Enquiry"
+    >
+      Discuss an Email Security Review
+    </a>
+
     <section class="features">
-      <div class="feature">
-        <h3>SPF & DMARC</h3>
-        <p>Understand important email authentication settings and identify potential configuration issues.</p>
-      </div>
-      <div class="feature">
-        <h3>Clear Findings</h3>
-        <p>Turn technical checks into understandable findings and recommended next steps.</p>
-      </div>
-      <div class="feature">
-        <h3>Built for IT Teams</h3>
-        <p>Work toward a simpler way to review and document domain security for clients.</p>
-      </div>
+      <article class="feature">
+        <h2>SPF & DMARC</h2>
+        <p>
+          Understand key email authentication settings and identify
+          potential configuration gaps.
+        </p>
+      </article>
+
+      <article class="feature">
+        <h2>Clear Findings</h2>
+        <p>
+          Turn technical checks into understandable findings and
+          practical next steps.
+        </p>
+      </article>
+
+      <article class="feature">
+        <h2>Built for IT Teams</h2>
+        <p>
+          Explore a more consistent way to review domains across
+          multiple clients.
+        </p>
+      </article>
     </section>
   </main>
 
   <footer>
     SignalFort · Email and domain security for growing IT teams
-    <br>Early-stage project · Features are under development
   </footer>
 </body>
 </html>
